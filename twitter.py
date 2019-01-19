@@ -77,8 +77,10 @@ def get_tweets(query):
         print('Timeout')
 
 # call function get_tweets()
-get_tweets('youtube article 13')
-get_tweets('youtube copyright')
+get_tweets('#Article13')
+get_tweets('#SaveYourInternet')
+get_tweets('#Article11')
+get_tweets('#SaveTheInternet')
 
 # convert the list to a DataFrame
 tweet_details = pd.DataFrame(df_list, columns = ['id', 'text', 'polarity_value',
